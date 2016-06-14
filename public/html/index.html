@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	我是public下的index
+	<button>js跳转</button>
+	<script>
+		window.onload = function () {
+			console.log(window.location.href);
+			document.querySelector('button').onclick = function () {
+				console.log(window.location.href);
+				window.location.href = '/images/API.jpg';
+			};
+		};
+		
+	</script>
+</body>
+</html>
